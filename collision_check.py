@@ -118,6 +118,10 @@ def check_collision(cylinder1, cylinder2):
         else:
             return False, info
     
+    elif info['coplane']:
+        #TODO: check the coplane case
+        # Find the four corners of the rectangle
+        return False, info
     else:
         # Find the common normal vector
         A = np.array([
@@ -179,3 +183,16 @@ def check_collision(cylinder1, cylinder2):
             
             return off_test1 or off_test2, info
         
+cylinder1 = {
+    "direct": np.array([1, 1, 1]),
+    "center": np.array([1, 0, 0]),
+    "radius": 1,
+    "height": 1
+}
+cylinder2 = {
+    "direct": np.array([0, 0, 1]),
+    "center": np.array([-0.6, -0.6, 0]),
+    "radius": 1,
+    "height": 1
+}
+print(check_collision(cylinder1, cylinder2))
