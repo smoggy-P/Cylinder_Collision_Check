@@ -113,7 +113,7 @@ def check_collision(cylinder1, cylinder2):
     
     # Finite cylinder collision check
     if info['parallel']:
-        if abs(np.dot(c2 - c1, d1)) >= (h1 + h2) / 2:
+        if abs(np.dot(c2 - c1, d1)) <= (h1 + h2) / 2:
             return True, info 
         else:
             return False, info
@@ -183,16 +183,3 @@ def check_collision(cylinder1, cylinder2):
             
             return off_test1 or off_test2, info
         
-cylinder1 = {
-    "direct": np.array([1, 1, 1]),
-    "center": np.array([1, 0, 0]),
-    "radius": 1,
-    "height": 1
-}
-cylinder2 = {
-    "direct": np.array([0, 0, 1]),
-    "center": np.array([-0.6, -0.6, 0]),
-    "radius": 1,
-    "height": 1
-}
-print(check_collision(cylinder1, cylinder2))

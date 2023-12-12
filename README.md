@@ -27,6 +27,7 @@ cylinder2 = {
 ```
 The notebook will visualize the two cylinders and the collision detection result:
 ![collision](./cylinders.png)
+
 Then you can call the `check_collision` function to check if the two cylinders collide:
 ```python
 check_collision(cylinder1, cylinder2)
@@ -36,5 +37,6 @@ It will return `True` if the two cylinders collide, otherwise it will return `Fa
 ## Reference
 [1] J. Ketchel and P. Larochelle, “Collision detection of cylindrical rigid bodies for motion planning,” in Proceedings 2006 IEEE International Conference on Robotics and Automation, 2006. ICRA 2006., Orlando, FL, USA: IEEE, 2006, pp. 1530–1535. doi: 10.1109/ROBOT.2006.1641925.
 
+[2] R. G. Chittawadigi and S. K. Saha, "An analytical method to detect collision between cylinders using dual number algebra," 2013 IEEE/RSJ International Conference on Intelligent Robots and Systems, Tokyo, Japan, 2013, pp. 5353-5358, doi: 10.1109/IROS.2013.6697131.
 ## TODO
 - [ ] There are bugs remaining when the central axis of the cylinder are coplanar.
