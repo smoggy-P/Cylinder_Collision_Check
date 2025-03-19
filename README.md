@@ -1,5 +1,5 @@
 # Analytical Collision Detection for Cylindrical Rigid Bodies
-
+[![FAIRy](https://firebasestorage.googleapis.com/v0/b/resoft-fairy.appspot.com/o/users%2F29809038%2Fbadges%2FCylinder_Collision_Check.svg?alt=media&token=ba40e573-ace1-4e04-b3c9-941f4b3735d1)](https://howfairis.com)
 ## Introduction
 This repository contains the code for the analytical collision detection between cylindrical rigid bodies. It is a reproduction of the method described in the paper [Collision detection of cylindrical rigid bodies for motion planning](https://ieeexplore.ieee.org/document/1641925).
 
